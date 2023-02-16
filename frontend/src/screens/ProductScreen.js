@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { detailsProduct } from "../actions/productActions";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
-import Rating from "../components/Rating";
+import Rate from "../components/Rating";
 
 export default function ProductScreen(props) {
   const dispatch = useDispatch();
@@ -47,10 +47,10 @@ export default function ProductScreen(props) {
                     <h1>{product.name}</h1>
                   </li>
                   <li>
-                    <Rating
+                    <Rate
                       rating={product.rating}
                       numReviews={product.numReviews}
-                    ></Rating>
+                    ></Rate>
                   </li>
                   <li>Pirce : {product.price} DT</li>
                   <li>
